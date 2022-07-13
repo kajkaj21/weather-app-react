@@ -1,6 +1,6 @@
 # Weather App
 
-In this app, you can check the current weather, today's highlights (wind status, humidity, visibility and air pressure), and the weather for the next five days (min and max temperature) for any place in the World.
+In this app, you can check the current weather, today's highlights (wind status, humidity, visibility and air pressure), and the weather for the next five days (min and max temperature) for any place in the World. It is my first React project, which you can try out using the link below:
 
 https://kajetan-szczepanski-weather-app-react.netlify.app/
 
