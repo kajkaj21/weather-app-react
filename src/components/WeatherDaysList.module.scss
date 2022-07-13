@@ -1,0 +1,13 @@
+.list {
+  width: 100%;
+  max-width: 45rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  list-style-type: none;
+
+  @media screen and (min-width: 1000px) {
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 90rem;
+  }
+}

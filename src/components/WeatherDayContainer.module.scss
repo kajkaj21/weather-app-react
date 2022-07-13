@@ -1,0 +1,42 @@
+.container {
+  color: #e7e7eb;
+  background-color: #1e213a;
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+
+  p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  .img-container {
+    width: 100%;
+    max-width: 15rem;
+    margin-bottom: 3rem;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .temperatures {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.6rem;
+    font-weight: 500;
+
+    span:last-child {
+      color: #a09fb1;
+    }
+  }
+}

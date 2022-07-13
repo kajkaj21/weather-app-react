@@ -1,0 +1,14 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #100e1d;
+
+  .wrapper {
+    margin: auto 0;
+  }
+
+  @media screen and (min-width: 1300px) {
+    height: 100vh;
+    grid-template-columns: 33% 1fr;
+  }
+}

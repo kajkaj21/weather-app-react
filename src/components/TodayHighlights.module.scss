@@ -1,0 +1,30 @@
+.today-highlight-section {
+  background-color: #100e1d;
+  padding: 2rem;
+
+  div {
+    max-width: 90rem;
+    margin: 0 auto;
+
+    h2 {
+      color: #e7e7eb;
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-bottom: 3.2rem;
+    }
+
+    ul {
+      list-style-type: none;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3.2rem;
+      max-width: 45rem;
+      margin: 0 auto;
+
+      @media screen and (min-width: 1000px) {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 90rem;
+      }
+    }
+  }
+}

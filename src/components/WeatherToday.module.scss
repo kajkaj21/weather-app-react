@@ -1,0 +1,112 @@
+.section-weather-today {
+  position: relative;
+  background-color: #1e213a;
+  padding: 2rem 1rem;
+
+  .buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8rem;
+
+    button {
+      cursor: pointer;
+      font-family: inherit;
+      display: block;
+      background-color: #6e707a;
+      color: #e7e7eb;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border: none;
+      font-size: 1.6rem;
+      font-weight: 500;
+      transition: 0.3s ease-in opacity;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    button:first-child {
+      height: 4rem;
+      width: 16rem;
+    }
+
+    button:last-child {
+      height: 4rem;
+      width: 4rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .weather-icon-container {
+    height: 15rem;
+    width: 17.5rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.2rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-image: url("../assets/Cloud-background.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      opacity: 0.2;
+      transform: scale(2);
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .weather-data {
+    color: #a09fb1;
+    text-align: center;
+
+    & p:first-child {
+      font-size: 4.8rem;
+      margin-bottom: 2rem;
+
+      span {
+        color: #e7e7eb;
+        font-size: 14.4rem;
+        font-weight: 500;
+      }
+    }
+
+    & p:nth-child(2) {
+      font-weight: 600;
+      font-size: 3.6rem;
+      margin-bottom: 5rem;
+    }
+
+    & p:nth-child(3) {
+      font-weight: 500;
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+
+      span {
+        margin: 0 1.5rem;
+      }
+    }
+
+    & p:nth-child(4) {
+      font-weight: 600;
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+    }
+  }
+}
