@@ -34,8 +34,9 @@ const SearchContainer = (props) => {
     try {
       const query = inputRef.current.value;
       const res = await fetch(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=1&appid=${props.API_KEY}`
+        `https://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=1&appid=${props.API_KEY}`
       );
+
       const data = await res.json();
 
       const { lat, lon, name } = data[0];
