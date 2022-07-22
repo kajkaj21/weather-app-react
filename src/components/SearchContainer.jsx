@@ -41,12 +41,10 @@ const SearchContainer = (props) => {
 
       const { lat, lon, name } = data[0];
 
-      console.log(data[0]);
       props.searchLocationWeather(lat, lon, name);
       props.hideSearchContainer();
       inputRef.current.value = "";
     } catch (error) {
-      console.log(error);
       props.setError("Could not find your location");
     }
     inputRef.current.blur();

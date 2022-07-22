@@ -80,7 +80,6 @@ function App() {
         // setting next 5 days weather
         setNextDaysWeather(data.daily.slice(0, 5));
       } catch (error) {
-        console.log(error);
         setHasError(error.message);
       }
       setLoadingSpinnerIsVisible(false);

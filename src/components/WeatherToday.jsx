@@ -84,36 +84,3 @@ const WeatherToday = (props) => {
 };
 
 export default WeatherToday;
-
-// const [currentLatitude, setCurrentLatitude] = useState();
-// const [currentLongitude, setCurrentLongitude] = useState();
-
-// const getCurrentLocationWeather = useCallback(async (lat, lon, API_KEY) => {
-//   const result = await fetch(
-//     `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=hourly&appid=${API_KEY}`
-//   );
-//   const data = await result.json();
-//   console.log(data);
-// });
-
-// const getLocation = () => {
-//   const success = (position) => {
-//     setCurrentLatitude(position.coords.latitude);
-//     setCurrentLongitude(position.coords.longitude);
-//   };
-
-//   const error = () => {
-//     console.log("error");
-//   };
-
-//   navigator.geolocation.getCurrentPosition(success, error);
-// };
-
-// useEffect(() => {
-//   getCurrentLocationWeather(currentLatitude, currentLongitude, props.API_KEY);
-// }, [
-//   currentLatitude,
-//   currentLongitude,
-//   props.API_KEY,
-//   getCurrentLocationWeather,
-// ]);
